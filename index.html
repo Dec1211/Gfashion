@@ -1,0 +1,55 @@
+<!-- <!DOCTYPE html> -->
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>GFashion-登录/注册</title>
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="icon" href="images/index/html_logo.png"/>
+	</head>
+	<body>
+		<!--模态登录对话框-->
+		<div class="modal">
+			<!--登录框-->
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<h4>用户登录</h4>
+					<p class="alert">
+						请输入您的登录信息
+						<!-- Please enter your login information here. -->
+					</p>
+					<form id="login-form">
+						<input type="text" placeholder="请输入用户名" name="uname" autocomplete="off">
+						<input type="password" placeholder="请输入密码" name="upwd">
+						<input type="button" value="Login" id="bt-login">
+					</form>
+				</div>
+			</div>
+			<!--注册框-->
+			<div class="modal-register">
+				<div class="modal-content">
+					<div>
+						<h4>用户注册</h4>
+						<a href="#" class="login">注册</a>
+					</div>
+					<p class="alert">
+						请输入您的注册信息
+						<!-- Please enter your registration information here. -->
+					</p>
+					<form id="register">
+						<b>用户名：</b><input type="text" placeholder="请设置用户名" name="username" autocomplete="off" required pattern="^\w{4,8}$" maxlength="8" minlength="4">
+						<span class="normal">请输入4至8位数字，英文或中文</span><br/>
+						<b>密码：</b><input type="password" placeholder="请设置密码" name="userpwd" required maxlength="12" minlength="6">
+						<span class="normal">请输入6到12位密码</span>
+						<input type="submit" value="Register" id="bt-register">
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/jquery-1.11.3.js"></script>
+		<script src="js/index.js"></script>
+		<script src="js/modernizr.js"></script>
+	</body>
+</html>

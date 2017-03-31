@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>GFashion-提交订单</title>
+  <link rel="stylesheet" href="css/index.css"/>
+  <link rel="icon" href="images/index/html_logo.png"/>
+</head>
+<body>
+  <div id="head"></div>
+  <div id="checkout">
+    <div class="content_auto">
+      <a href="home.html">首页</a><b>/</b><span>提交订单</span>
+    </div>
+    <div id="userfull_pages">
+      <div class="content_auto">
+        <h2>USEFULL PAGES</h2>
+        <div class="pages_left lf">
+          <ul>
+            <li>HOMEPAGE</li>
+            <li>关于我们</li>
+            <li>SHOP</li>
+            <li>特色商品</li>
+            <li>联系我们</li>
+          </ul>
+          <div class="pro_poster">
+            <div class="pro_poster_font">
+              <p>新品推荐</p>
+              <h3>皮革服装</h3>
+              <a href="#" class="shop_now">马上购物</a>
+            </div>
+          </div>
+        </div>
+        <div class="pages_rigth">
+          <form id="form-order">
+            <input type="hidden" name="uname" value=""/>
+          </form>
+          <ul class="checkout_detail">
+            <li>
+              <p class="openPages title">
+                <i>01</i>
+                <span>寄件人</span>
+              </p>
+              <div class="showPages container">
+                <div>
+                  <p>
+                    <label for="Buname">姓名</label>
+                    <input type="text" id="Buname"/>
+                  </p>
+                  <p>
+                    <label for="Bemail">E-Mail</label>
+                    <input type="text" id="Bemail"/>
+                  </p>
+                  <p>
+                    <label for="Bphone">电话</label>
+                    <input type="text" id="Bphone"/>
+                  </p>
+                  <p>
+                    <label for="Baddress">地址</label>
+                    <input type="text" id="Baddress"/>
+                  </p>
+                  <p>
+                    <button class="nextContent">继续</button>
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <p class="closePages title">
+                <i>02</i>
+                <span>收件人</span>
+              </p>
+              <div class="hiddenPages container">
+                <div>
+                  <p>
+                    <label for="rcvName">姓名</label>
+                    <input type="text" id="rcvName" name="rcvName" form="form-order"/>
+                  </p>
+                  <p>
+                    <label for="rcvEmail">E-Mail</label>
+                    <input type="text" id="rcvEmail" name="rcvEmail" form="form-order"/>
+                  </p>
+                  <p>
+                    <label for="rcvPhone">电话</label>
+                    <input type="text" id="rcvPhone" name="rcvPhone" form="form-order"/>
+                  </p>
+                  <p>
+                    <label for="rcvAddress">地址</label>
+                    <input type="text" id="rcvAddress" name="rcvAddress" form="form-order"/>
+                  </p>
+                  <p>
+                    <button class="nextContent">继续</button>
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <p class="closePages title">
+                <i>03</i>
+                <span>支付方式</span>
+              </p>
+              <div class="methods hiddenPages container">
+                <div>
+                  <p>
+                    <input type="radio" id="paypal" name="payment" checked value="1" form="form-order"/>
+                    <label for="paypal">PAYPAL</label>
+                  </p>
+                  <span>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit.</span>
+                  <p>
+                    <input type="radio" id="ecpsse" name="payment" value="2" form="form-order"/>
+                    <label for="ecpsse">Ecpsse</label>
+                  </p>
+                  <span>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit.</span>
+                  <p>
+                    <input type="radio" id="moneygram" name="payment" value="3" form="form-order"/>
+                    <label for="moneygram">MoneyGram</label>
+                  </p>
+                  <span>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit.</span>
+                  <p>
+                    <button class="nextContent">继续</button>
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <p class="closePages title">
+                <i>04</i>
+                <span>配送方式</span>
+              </p>
+              <div class="methods hiddenPages container">
+                <div>
+                  <p>
+                    <input type="radio" id="ups" name="delivery" checked value="1" form="form-order"/>
+                    <label for="ups">UPS</label>
+                  </p>
+                  <span>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit.</span>
+                  <p>
+                    <input type="radio" id="fedex" name="delivery" value="2" form="form-order"/>
+                    <label for="fedex">Fedex</label>
+                  </p>
+                  <span>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit.</span>
+                  <p>
+                    <input type="radio" id="dhl" name="delivery" value="3" form="form-order"/>
+                    <label for="dhl">DHL</label>
+                  </p>
+                  <span>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit.</span>
+                  <p>
+                    <button class="nextContent">继续</button>
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <p class="closePages title">
+                <i>05</i>
+                <span>帐单明细</span>
+              </p>
+              <div class="billing_detail hiddenPages container">
+                <div>
+                  <table id="shopcatTable">
+                    <tbody id="shopcatTbody">
+                      <!--<tr valign="middle" align="center">
+                        <td>
+                          <img src="images/productList/000095-0014_2_t.jpg">
+                          <a href="#">Schott NYC Men's 2190J Quilted Jacket</a>
+                        </td>
+                        <td>
+                          <span class="unit_price">$200</span>
+                        </td>
+                        <td>
+                          <div class="changeMath">
+                            <span>×2</span>
+                          </div>
+                        </td>
+                        <td>
+                          In Store
+                        </td>
+                      </tr>-->
+                    </tbody>
+                  </table>
+                  <input form="form-order" type="hidden" name="productList" value=""/>
+                  <h2 class="rf">
+                    <b>总价：</b>
+                    <span></span>
+                    <input type="hidden" name="price" form="form-order" value=""/>
+                  </h2>
+                  <p class="rf">
+                    <button id="continue_shop">继续购物</button>
+                    <button id="go_checkout">结算</button>
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="bottom"></div>
+  <!--订单提交后弹出提交成功摸态框-->
+  <div id="cart_model" class="orderNum_model">
+    <p>商品购买成功!<br/>订单编号 : <a></a></p>
+    <button id="ensure">确定</button>
+  </div>
+
+  <script src="js/jquery-1.11.3.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/checkout.js"></script>
+  <script src="js/modernizr.js"></script>
+</body>
+</html>

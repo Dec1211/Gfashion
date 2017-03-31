@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>GFashion-商品列表</title>
+  <link rel="stylesheet" href="css/index.css"/>
+  <link rel="icon" href="images/index/html_logo.png"/>
+</head>
+<body>
+  <div id="head"></div>
+  <section id="productList">
+    <div class="nav_home">
+      <div class="content_auto">
+        <a href="home.html">主页</a>
+        <i>|</i>
+        <span>商品</span>
+      </div>
+    </div>
+    <div class="pro_list">
+      <div class="content_auto">
+        <div class="list_left">
+          <div class="best_sellers">
+            <h1 class="best_sellers">畅销商品</h1>
+            <ul>
+              <li>
+                <div class="pro_01">
+                  <img src="images/productList/430041-0014_1_t.jpg" alt=""/>
+                  <div class="pro_detail">
+                    <p>Inceptos orci hac libero</p>
+                    <h4>
+                      <s>$ 350.00</s>
+                      <span>$ 250.00</span>
+                    </h4>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="pro_01">
+                  <img src="images/productList/589550-0014_1_t.jpg" alt=""/>
+                  <div class="pro_detail">
+                    <p>Inceptos orci hac libero</p>
+                    <h4>
+                      <s>$ 680.00</s>
+                      <span>$ 400.00</span>
+                    </h4>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="pro_poster">
+              <div class="pro_poster_font">
+                <p>新品推荐</p>
+                <h3>皮革服饰</h3>
+                <a href="#" class="shop_now">马上购物</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="list_right">
+          <div class="nav_top">
+            <ul class="lf top_left">
+              <li><a href="#" data-chose="sales" class="checked">销量</a></li>
+              <li><a href="#" data-chose="price">价格</a></li>
+              <li><a href="#" data-chose="review">评价</a></li>
+            </ul>
+            <div class="top_middle lf">
+              <span>每页显示个数：</span>
+              <select>
+                <option value="6">6</option>
+                <option value="9">9</option>
+              </select>
+            </div>
+            <ul class="rf top_right">
+              <li><a href="#" class="disabled" data-move="left">&lt;</a></li>
+              <li><a href="#" data-move="right">&gt;</a></li>
+            </ul>
+          </div>
+          <div class="produce_list">
+            <ul>
+              <!--<li>
+                <div class="pro_single">
+                  <div class="pro_photo">
+                    <img src="images/productList/000095-0014_2_t.jpg" alt=""/>
+                    <div class="pro_cover">
+                      <div class="move">
+                        <h1></h1>
+                        <h4></h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pro_single_detail">
+                    <h3>INCEPTOS ORCI HAC LIBERO</h3>
+                    <p>$ 250.00</p>
+                    <a href="#" class="lf">+ Add to Wishlist</a>
+                    <a href="#" class="rf">+ Add to Compare</a>
+                  </div>
+                </div>
+              </li>-->
+            </ul>
+          </div>
+          <ol class="pager rf">
+            <!--<li><a href="" class="active">1</a></li>-->
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div id="bottom"></div>
+  <!--添加商品成功后弹出的摸态框-->
+  <div id="cart_model">
+    <p>该产品已成功添加到购物车，点击跳转<a href="cart.html">购物车</a></p>
+    <button id="ensure">确定</button>
+  </div>
+
+  <script src="js/jquery-1.11.3.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/productlist.js"></script>
+  <script src="js/modernizr.js"></script>
+</body>
+</html>

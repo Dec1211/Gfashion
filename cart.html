@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>GFashion-购物车</title>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" href="css/index.css"/>
+		<link rel="icon" href="images/index/html_logo.png"/>
+	</head>
+	<body>
+		<div id="head"></div>
+		<section id="shopCart">
+			<div class="content_auto">
+				<a href="home.html">首页</a><b>/</b><span>购物车</span>
+			</div>
+			<div class="carProduce">
+				<div class="content_auto">
+					<table id="shopcatTable">
+						<thead>
+							<tr align="center" valign="middle">
+								<td class="td1">商品名</td>
+								<td>商品价格</td>
+								<td>QTY</td>
+								<td>Sub Total</td>
+								<td class="td5"></td>
+							</tr>
+						</thead>
+						<tbody id="shopcatTbody"></tbody>
+					</table>
+					<div id="empty">看来你的购物车是空的，马上去购物吧！</div>
+					<div id="apply">
+						<form class="lf">
+							<input type="test" placeholder="Enter You Coupon Code" name="txtEnter">
+							<input type="button" value="Apply Coupon">
+						</form>
+						<div id="Grand_Total" class="rf">
+							<div>
+								<b class="lf">Grand Total:</b>
+								<b class="rf" id="grandTotal">$350.00</b>
+							</div>
+							<button>提交订单</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="women_produce">
+				<div class="content_auto special_p">
+					<h1>特色产品</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ac lobortis lacus</p>
+					<span class="p_left_disable" data-left="left"></span>
+					<span class="p_right" data-right="right"></span>
+					<div class="wlist_p">
+						<ul class="single_p">
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div id="bottom"></div>
+		<!--添加商品成功后弹出的摸态框-->
+		<div id="cart_model">
+			<p>该产品已成功添加到购物车，点击跳转<a href="cart.html">购物车</a></p>
+			<button id="ensure">确定</button>
+		</div>
+
+		<script src="js/jquery-1.11.3.js"></script>
+		<script src="js/cart.js"></script>
+		<script src="js/common.js"></script>
+		<script src="js/modernizr.js"></script>
+	</body>
+</html>
